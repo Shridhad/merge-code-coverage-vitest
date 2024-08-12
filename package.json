@@ -1,26 +1,27 @@
 {
-    "name": "merge-code-coverage-vitest",
-    "version": "1.0.0",
-    "description": "merge-code-coverage-vitest",
-    "type": "module",
-    "main": "",
-    "scripts": {
-        "dev": "vite",
-        "test:unit": "vitest run",
-        "test:e2e": "playwright test",
-        "test:merge": "node ./merge-coverage.js"
-    },
-    "license": "MIT",
-    "dependencies": {},
-    "devDependencies": {
-        "@playwright/test": "^1.45.3",
-        "cross-env": "^7.0.3",
-        "eslint": "^9.7.0",
-        "eslint-config-plus": "^2.0.2",
-        "monocart-coverage-reports": "^2.9.3",
-        "monocart-reporter": "^2.6.1",
-        "vite": "^5.3.4",
-        "vitest": "^2.0.4",
-        "vitest-monocart-coverage": "^2.0.0"
-    }
+  "name": "merge-code-coverage-vitest",
+  "version": "1.0.0",
+  "description": "merge-code-coverage-vitest",
+  "type": "module",
+  "main": "",
+  "scripts": {
+    "dev": "vite",
+    "test:unit": "vitest run -c vitest.monocart.config.js",
+    "test:vitest": "vitest run",
+    "test:e2e": "playwright test",
+    "test:merge": "node ./merge-coverage.js"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.7.0",
+    "eslint-config-plus": "^2.0.2",
+    "monocart-coverage-reports": "^2.9.3",
+    "monocart-reporter": "^2.6.1",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.4",
+    "vitest-monocart-coverage": "^2.1.1"
+  }
 }
